@@ -35,10 +35,6 @@
         overflow: hidden
     }
 
-    .app-nav {
-        display: none
-    }
-
     /*头部导航栏*/
     /*.app-nav{width:768px;background: red;float: right;right: 0px;}*/
     .app-nav h1 {
@@ -125,18 +121,16 @@
 <!--允许在github上面编辑-->
  <script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
 <!-- 引入看板娘 -->
-<script type="text/javascript" charset="utf-8"  src="https://files.cnblogs.com/files/liuzhou1/L2Dwidget.0.min.js"></script>
-<script type="text/javascript" charset="utf-8"  src="https://files.cnblogs.com/files/liuzhou1/L2Dwidget.min.js"></script>
-<script type="text/javascript">
-    L2Dwidget.init({"display": {
-            "superSample": 2,
-            "width": 200,
-            "height": 400,
-            "position": "right",
-            "hOffset": 0,
-            "vOffset": 0
-        }
-    });
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.0.min.js"></script>
+<script>
+    L2Dwidget.init({
+        // "model": {jsonPath:"https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json","scale": 1 },
+    　　"model": {jsonPath:"https://unpkg.com/live2d-widget-model-z16@1.0.5/assets/z16.model.json","scale": 1 },
+        //"model": {jsonPath:"https://unpkg.com/live2d-widget-model-miku@1.0.5/assets/miku.model.json","scale": 1 },
+        "display": { "position": "right", "width": 100, "height": 200,"hOffset": 0, "vOffset": -20 },
+        "mobile": { "show": true, "scale": 0.5 },
+        "react": { "opacityDefault": 0.5, "opacityOnHover": 0.2 } });
 </script>
 <script>
     //禁用底部滚动条 document.documentElement.style.overflowY = 'hidden';
