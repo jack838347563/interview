@@ -2,7 +2,7 @@
 
 * 1.Java🏴󠁧󠁢󠁥󠁮󠁧󠁿
    * [Java基础](chapter/java_base.md)
-   * [Java基础](chapter/java_pro.md)
+   * [Java进阶](chapter/java_pro.md)
    * [Spring相关](chapter/java_frame.md)
    
    
